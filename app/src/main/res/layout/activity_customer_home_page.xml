@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerHomePage"
+    android:background="@drawable/menu_screen">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="339dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="201dp"
+        android:layout_marginRight="10dp"
+        android:text="Dear Customer,"
+        android:textAlignment="textStart"
+        android:textColor="@color/darkgreen"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="235dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/propertybtn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_3"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="96dp"
+                        android:layout_weight="8"
+
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Available products"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="5dp"
+                            android:lines="3"
+                            android:text="Available products in our company"
+                            android:textColor="#838383"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="96dp"
+                        android:layout_gravity="end"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:src="@drawable/products_1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/propertybtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_3"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="95dp"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Cart"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:lines="3"
+                            android:text="Your can add your product description here."
+                            android:textColor="#838383"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:src="@drawable/add" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/propertybtn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_3"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="16dp"
+                            android:text="My Orders"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:lines="3"
+                            android:text="Customers feedback for ypur products will appear here."
+                            android:textColor="#838383"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:src="@drawable/ord" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/propertybtn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="91dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_3"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="18dp"
+                        android:layout_height="93dp"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="16dp"
+                            android:text=" Feedback"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:lines="3"
+                            android:text="Clean better and get best feedbacks."
+                            android:textColor="#838383"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="89dp"
+                        android:layout_gravity="end"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:src="@drawable/feed" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/acceptadvice"
+                    android:layout_width="match_parent"
+                    android:layout_height="118dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_btn_3"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="230dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="16dp"
+                            android:text="Get Advise for your cultivation"
+                            android:textColor="@color/darkgreen"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+
+                            android:layout_width="230dp"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="10dp"
+                            android:lines="3"
+                            android:text="Get the best advises from our experienced farmers or you can email us AgroCenter@gmail.com."
+                            android:textColor="#838383"
+                            android:textSize="10dp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="27dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="end"
+                        android:layout_weight="3"
+                        android:padding="5dp"
+                        android:src="@drawable/advice1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <CalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/bg_btn_3"
+                android:backgroundTint="@color/ic_launcher_background" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

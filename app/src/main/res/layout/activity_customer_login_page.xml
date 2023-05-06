@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginCustomerPage"
+    android:background="@drawable/login_screen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="366dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="10dp"
+        android:text="WELCOME"
+        android:textAlignment="center"
+        android:textColor="@color/darkgreen"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/appCompatEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/bg_edtxt"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:hint="Customer Username"
+        android:gravity=""
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/appCompatEditText1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bg_edtxt"
+        android:drawableLeft="@drawable/ic_pass"
+        android:drawablePadding="10dp"
+        android:elevation="5dp"
+        android:hint="password "
+        android:gravity=""
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatEditText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_btn_1"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="LOGIN"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatEditText1"
+        app:layout_constraintVertical_bias="0.344" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton"
+        app:layout_constraintVertical_bias="0.59"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="3px"
+            android:text="Do you haven't an account?"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginBottom="28px"
+            android:onClick="SignIn"
+            android:text="Sign up "
+            android:textAlignment="center"
+            android:textColor="#0BF115"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
